@@ -54,6 +54,7 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    -webkit-user-select: none;
     user-select: none;
     box-shadow: 0 3px 7px rgba(18,140,126,0.7);
     transition: background-color 0.3s ease;
@@ -107,6 +108,7 @@
     cursor: pointer;
     box-shadow: 0 3px 7px rgba(37, 211, 102, 0.6);
     transition: background-color 0.3s ease;
+    -webkit-user-select: none;
     user-select: none;
   }
   #startChatBtn:hover {
@@ -142,6 +144,7 @@
     filter: blur(6px) brightness(0.7);
     transition: filter 0.8s ease;
     pointer-events: none;
+    -webkit-user-select: none;
     user-select: none;
   }
   #chatContainer {
@@ -275,6 +278,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     margin-bottom: 15px;
     animation: vibrate 0.3s linear infinite;
+    -webkit-user-select: none;
     user-select: none;
   }
   #birthdayFinalPage .message {
@@ -298,6 +302,7 @@
     font-size: 20px;
     color: white;
     animation: blinkCursor 1s step-start infinite;
+    -webkit-user-select: none;
     user-select: none;
   }
   
@@ -316,6 +321,7 @@
     cursor: pointer;
     box-shadow: 0 3px 7px rgba(37, 211, 102, 0.6);
     transition: background-color 0.3s ease;
+    -webkit-user-select: none;
     user-select: none;
     align-self: center;
   }
@@ -334,6 +340,7 @@
     overflow: visible;
     z-index: 1000;
     user-select: none;
+    -webkit-user-select: none;
   }
   .confetti-piece {
     position: absolute;
@@ -355,3 +362,5 @@
     80% { transform: translate(2px, 0) rotate(1deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
   }
+
+  
