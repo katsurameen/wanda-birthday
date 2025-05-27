@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>wanda's birthday!</title>
+<link rel="stylesheet" href="app/style/main.css"></link>
+</head>
+<body>
+  <div id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <div id="modalContent">
+      <p id="modalDesc">Would you like to play happy birthday music?</p>
+      <div class="modal-btns">
+        <button id="btnYes" class="modal-btn" aria-label="Yes, play music">Yes</button>
+        <button id="btnNo" class="modal-btn" aria-label="No, continue without music">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="introPage" aria-label="Greeting introduction">
+    <h1>Hi Wanda</h1>
+    <p>I really like your name btw :D</p>
+    <button id="startChatBtn" aria-label="Start chat with Wanda">Start Chat</button>
+  </div>
+
+  <div id="app" role="main" aria-live="polite" aria-atomic="true" tabindex="0">
+    <div id="chatContainer" class="page" aria-label="Chat simulation" tabindex="0">
+      <header id="header" aria-live="polite">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="name">Ndaaaa cantik</div>
+      </header>
+      <section id="chat" aria-live="polite" aria-atomic="false" tabindex="0" aria-label="Chat messages"></section>
+    </div>
+
+    <div id="finalPage" class="page" aria-label="Final message page" tabindex="0">
+      <p id="line1">Yep that's what im trying to say but...</p>
+      <p id="line2">I want something different than the other</p>
+      <p id="line3">I want something special</p>
+      <p id="line4">Because you're special :)</p>
+    </div>
+
+    <div id="birthdayFinalPage" class="page" aria-label="Birthday final page" tabindex="0">
+      <img src="assets/image/ndaa.png" alt="Woman smiling" />
+      <div class="message" aria-live="polite" aria-atomic="true">
+        <span id="animatedText"></span><span id="cursor">|</span>
+      </div>
+      <button id="replayBtn">Replay</button>
+      <div id="confetti"></div>
+    </div>
+  </div>
+
+<audio id="msgSentSound" src="https://actions.google.com/sounds/v1/cartoon/wood_plank_flicks.ogg" preload="auto"></audio>
+<audio id="happyBirthdayMusic" src="assets/music/hppy.mp3" preload="auto"></audio>
+<script type="application/javascript" src="app/script/main.js"></script>
+</body>
+</html>
